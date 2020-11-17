@@ -1,0 +1,93 @@
+<!doctype html>
+<htm lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="Murmur" content="Chat" />
+        <title>Murmur</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="css/estilo.css" type="text/css" />
+
+        <link type="text/css" rel="stylesheet" href="../css/estils.css">
+
+        <!--         <script type="text/javascript" src="main.js" async></script> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <script>
+            /* Set the width of the sidebar to 250px (show it) */
+            function openNav() {
+                document.getElementById("mySidepanel").style.borderStyle = "none solid none none";
+                document.getElementById("mySidepanel").style.width = "250px";
+
+            }
+
+            /* Set the width of the sidebar to 0 (hide it) */
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+                document.getElementById("mySidepanel").style.border = "none";
+            } 
+        </script>
+
+        <div>
+            <button class="openbtn" onclick="openNav()">&#9776; Murmur</button>
+        </div>
+
+        <div class="container">
+            <ul class="list-group">
+                <li class="shadow-lg list-group-item p-1 m-1 rounded border-success">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="../assets/usuari.svg" class="mt-2" width="70px" height="70px" alt="avatar">
+                        </div>
+
+                        <div class="col-9">
+                            <h4 class="mt-2">Txema</h4>
+                            <p class="mt-0">Al fascismo no se le discute. Se le destruye</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="shadow-lg list-group-item p-1 m-1 rounded border-success">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="../assets/usuaria.svg" class="mt-2" width="70px" height="70px" alt="avatar">
+                        </div>
+
+                        <div class="col-9">
+                            <h4 class="mt-2">Yoli</h4>
+                            <p class="mt-0">La violencia es el último recurso de los incompetentes</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="shadow-lg list-group-item p-1 m-1 rounded border-success">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="../assets/usuari.svg" class="mt-2" width="70px" height="70px" alt="avatar">
+                        </div>
+
+                        <div class="col-9">
+                            <h4 class="mt-2">Pascual</h4>
+                            <p class="mt-0">Tornant a casa</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+    </body>
+
+
+    </html>

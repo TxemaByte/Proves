@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ca-ES">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0 auto;
+      max-width: 800px;
+      padding: 0 20px;
+      background-color: #202020;
+    }
+
+    .container {
+      border: 2px solid #2C7F00;
+      background-color: black;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    .usuari {
+      border-radius: 50px;
+    }
+
+    .darker {
+      border-color: #2C7F00;
+      background-color: #262626;
+    }
+
+    .container::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .container img {
+      float: left;
+      max-width: 60px;
+      width: 100%;
+      margin-right: 20px;
+      border-radius: 50%;
+      border: 2px solid #2C7F00;
+    }
+
+    .container img.right {
+      float: right;
+      margin-left: 20px;
+      margin-right: 0;
+    }
+
+    .time-right {
+      float: right;
+      color: #47CC00;
+    }
+
+    .time-left {
+      float: left;
+      color: #47CC00;
+      margin-top: 45px;
+    }
+
+    .text-dret {
+      float: right;
+    }
+
+    p,
+    span,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #47CC00;
+    }
+
+    .nom {
+      margin-top: 5px;
+    }
+
+    .sobre-mi {
+      margin-top: -15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Contactes</h2>
+
+  <div class="container usuari">
+    <img src="../assets/usuaria.svg" alt="Avatar" style="width:100%;">
+    <h3 class="nom">Yoli</h3>
+    <p class="sobre-mi">La libertad no se mendiga</p>
+  </div>
+
+  <div class="container usuari">
+    <img src="../assets/usuari.svg" width="60px" height="60px" alt="avatar">
+    <h3 class="nom">Txema</h3>
+    <p class="sobre-mi">Al fascismo no se le discute. Se le destruye</p>
+  </div>
+
+  <h2>Missatges</h2>
+
+  <div class="container">
+    <img src="../assets/usuari.svg" alt="Avatar" style="width:100%;">
+    <p>Hola. Com estas?</p>
+    <span class="time-right">11:00</span>
+  </div>
+
+  <div class="container darker">
+    <img src="../assets/usuaria.svg" alt="Avatar" class="right" style="width:100%;">
+    <p class="text-dret">ieeeee, estic bé grácies per prguntar!</p>
+    <span class="time-left">11:01</span>
+  </div>
+
+  <div class="container">
+    <img src="../assets/usuari.svg" alt="Avatar" style="width:100%;">
+    <p>Perfecte. Vols quedar avui?</p>
+    <span class="time-right">11:02</span>
+  </div>
+
+  <div class="container darker">
+    <img src="../assets/usuaria.svg" alt="Avatar" class="right" style="width:100%;">
+    <p class="text-dret">Buf, no puc estic programant un xat!</p>
+    <span class="time-left">11:05</span>
+  </div>
+
+</body>
+
+</html>

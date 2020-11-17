@@ -1,0 +1,143 @@
+    /* verds-app */
+.verd-normal { color: #2C7F00; }
+.verd-negreta { color: #75FF2B; }
+.verd-teciari { color: #00d604; }
+.verd-accent { color: #15ff00; }
+ 
+:root {
+  --bg-color: #202020;
+  --container-normal: black;
+  --container-clar: #262626;
+  --text: #2C7F00;
+  --text-resaltat: #75FF2B;
+}
+ 
+ body {
+  background: var(--bg-color);
+  color: #66cc66;
+  font-family: sans-serif;
+}
+
+.oscur {
+  border: 2px solid #2C7F00;
+  background-color: black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.clar {
+  border-color: #2C7F00;
+  background-color: #262626;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #47CC00;
+}
+
+.time-left {
+  float: left;
+  color: #47CC00;
+}
+p {
+  font-size: 14px;
+	color: #47CC00;
+}
+
+p {
+  font-size: 14px;
+ /*  color: #66cc33; */
+  color: #2C7F00
+} 
+
+
+ /* The sidepanel menu */
+ .sidepanel {
+  height: 100%; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: black; /* Black-grey*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #66cc33;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #75FF2B;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: #66cc33;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #202020;
+} 
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.list-group-item{
+  background-color: black;
+  border: 2px solid #15ff00;
+  color: #66cc33;
+  box-shadow: greenyellow;
+}
